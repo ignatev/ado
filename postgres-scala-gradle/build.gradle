@@ -8,8 +8,13 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.scala-lang:scala-library:2.13.3'
-    testImplementation 'org.scalatest:scalatest_2.13:3.2.0'
+    implementation 'org.scala-lang:scala-library:2.11.12'
+
+    testImplementation 'com.dimafeng:testcontainers-scala-scalatest_2.11:0.36.0'
+    testImplementation 'com.dimafeng:testcontainers-scala-postgresql_2.11:0.36.0'
+    testImplementation 'org.scalatest:scalatest_2.11:2.2.6'
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.postgresql:postgresql:42.2.14'
 }
 
 task run(type: JavaExec, dependsOn: classes) {

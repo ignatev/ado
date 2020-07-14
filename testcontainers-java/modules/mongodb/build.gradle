@@ -1,7 +1,0 @@
-description = "Testcontainers :: MongoDB"
-
-dependencies {
-    compile project(':testcontainers')
-
-    testCompile("org.mongodb:mongodb-driver-sync:4.0.2")
-}
