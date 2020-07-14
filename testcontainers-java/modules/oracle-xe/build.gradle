@@ -1,0 +1,8 @@
+description = "Testcontainers :: JDBC :: Oracle XE"
+
+dependencies {
+    compile project(':jdbc')
+
+    testCompile project(':jdbc-test')
+    testCompile 'com.oracle.ojdbc:ojdbc8:19.3.0.0'
+}
